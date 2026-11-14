@@ -300,9 +300,11 @@
       });
 
       const data = await response.json().catch(() => ({}));
-      if (response.ok && data.success !== false) return true;
+      if (response.ok && (data.success === true || data.success === "true")) {
+        return true;
+      }
       throw new Error(
-        data.message || "Възникна грешка при изпращането. Опитайте отново."
+        "Не успяхме да изпратим запитването. Моля, обадете се на 0893 871 252."
       );
     }
 
