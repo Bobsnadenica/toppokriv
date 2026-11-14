@@ -336,6 +336,23 @@
           errorEl.textContent =
             err.message ||
             "Възникна грешка. Опитайте отново или се обадете на 0893 871 252.";
+          const emailLink = document.createElement("a");
+          const emailBody = [
+            `Име: ${formData.get("name") || ""}`,
+            `Телефон: ${formData.get("phone") || ""}`,
+            `Имейл: ${formData.get("email") || ""}`,
+            `Адрес: ${formData.get("address") || ""}`,
+            "",
+            String(formData.get("message") || ""),
+          ].join("\n");
+          emailLink.href =
+            "mailto:info@toppokriv.com?subject=" +
+            encodeURIComponent("Запитване от toppokriv.com") +
+            "&body=" +
+            encodeURIComponent(emailBody);
+          emailLink.textContent = "Изпратете запитването по имейл";
+          emailLink.className = "mt-2 block font-semibold underline";
+          errorEl.appendChild(emailLink);
           errorEl.classList.remove("hidden");
         }
       } finally {
