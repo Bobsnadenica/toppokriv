@@ -2,8 +2,8 @@ const SITE = {
   name: "Топ Покрив",
   phone: "0893 871 252",
   phoneRaw: "+359893871252",
-  email: "info@pokrivplus.com",
-  contactFormEndpoint: "https://formsubmit.co/ajax/info@pokrivplus.com",
+  email: "info@toppokriv.com",
+  contactFormEndpoint: "https://formsubmit.co/ajax/info@toppokriv.com",
   siteUrl: "https://toppokriv.com",
   topBannerText: "Получете оферта за по-малко от 5 минути",
   navLinks: [

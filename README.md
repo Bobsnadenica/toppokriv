@@ -9,6 +9,6 @@ Static Bulgarian roofing website published from the root of this repository with
 - `/blog/remont-na-pokrivi-ceni-i-faktori/`
 - `/blog/kak-da-razpoznaete-priznatsi-na-povreden-pokriv/`
 
-The site currently uses the supplied “Топ Покрив” branding, phone `0893 871 252`, and `info@pokrivplus.com`. The enquiry form posts to FormSubmit for that mailbox. Confirm the mailbox receives enquiries before relying on the form for customers. GitHub Pages does not run PHP.
+The site uses “Топ Покрив” branding and phone `0893 871 252`. Contact links and the enquiry form use `info@toppokriv.com`; Cloudflare Email Routing forwards that address to the owner’s verified destination inbox. The form posts through FormSubmit, which requires separate activation whenever its recipient address changes. Confirm both the Cloudflare route and FormSubmit delivery before relying on the form for customers. GitHub Pages does not run PHP.
 
 The canonical URLs and structured data use `https://toppokriv.com`. The `www` hostname redirects to the apex through GitHub Pages when both DNS records are present.

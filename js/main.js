@@ -288,7 +288,7 @@
 
       const endpoint =
         (window.SITE && SITE.contactFormEndpoint) ||
-        "https://formsubmit.co/ajax/info@pokrivplus.com";
+        "https://formsubmit.co/ajax/info@toppokriv.com";
 
       const response = await fetch(endpoint, {
         method: "POST",
