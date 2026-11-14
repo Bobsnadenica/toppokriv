@@ -1,5 +1,5 @@
 const SITE = {
-  name: "Покрив Плюс",
+  name: "Топ Покрив",
   phone: "0893 871 252",
   phoneRaw: "+359893871252",
   email: "info@pokrivplus.com",
