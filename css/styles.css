@@ -10,3 +10,11 @@
 }
 
 .site-wordmark{display:inline-flex;align-items:center;gap:.6rem;color:#fff;font-family:Inter,system-ui,sans-serif;font-size:clamp(1.35rem,2.3vw,2.1rem);font-weight:700;letter-spacing:-.035em;line-height:1;white-space:nowrap}.site-wordmark img{display:block;width:clamp(2.2rem,3.5vw,3.1rem);height:clamp(2.2rem,3.5vw,3.1rem);flex:none}.site-wordmark strong{color:#f69256;font-weight:800}
+
+@media (max-width: 1023px) {
+  #viber-button {
+    left: 1rem;
+    right: auto;
+    bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+  }
+}
